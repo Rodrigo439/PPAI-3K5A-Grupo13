@@ -35,7 +35,7 @@ import mapImage from '../assets/map.png';
       exit="exit"
       variants={containerVariants}>
         {/* Header */}
-        <div className="bg-[#2c4a4a] px-4 py-2 flex justify-between items-center">
+        <div className="bg-[#54767C] px-4 py-2 flex justify-between items-center">
           <h3 className="text-sm font-semibold">
             Evento sísmico N°{evento.id} detectado automáticamente (Revisión manual)
           </h3>

@@ -9,7 +9,7 @@ const EventosListado = ({ eventos, onSeleccionar }) => (
           </p>
           <button
             onClick={() => onSeleccionar(evento)}
-            className="bg-[#e4e4e4] text-sm text-[#233131] px-3 py-1 rounded-full shadow"
+            className="bg-[#a4d1c0] hover:bg-[#6bc1cc9f] text-sm text-[#233131] px-3 py-1 rounded-full shadow cursor-pointer"
           >
             Revisar
           </button>

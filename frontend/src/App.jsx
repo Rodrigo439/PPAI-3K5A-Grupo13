@@ -24,7 +24,7 @@ const App = () => {
   };
 
   return (
-    <div className="box-border w-screen min-h-screen overflow-y-auto overflow-x-hidden bg-[#f4f5f7] flex flex-col items-center justify-center">
+    <div className="box-border w-screen min-h-screen overflow-y-auto overflow-x-hidden bg-[#e2dbcf] flex flex-col items-center justify-center">
       {/* Mostrar el listado solo cuando no hay evento seleccionado y se permite mostrar */}
       {!eventoSeleccionado && mostrarRevision && (
         <EventosListado eventos={eventos} onSeleccionar={(evento) => {

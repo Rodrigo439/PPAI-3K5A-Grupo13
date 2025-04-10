@@ -3,26 +3,41 @@ import { useState } from "react";
 import ExpertosListado from "./ExpertosListado";
 
 const ProcesoRevision = ({ evento, onCerrar }) => {
-    const [escalarRevision, setEscalarRevision] = useState(false);
     const [vistaActual, setVistaActual] = useState("detalle");
-
-    const vistas = {
-        detalle: <DetalleEvento evento={evento} onCerrar={onCerrar} onEscalarRevision={() => {setEscalarRevision(true); cambiarVista("expertos")}} />,
-        expertos: <ExpertosListado evento={evento} onCerrar={onCerrar} onSolicitar={(experto) => console.log("se a relevado la revision al experto/a: " + experto)}/>,
-        // ventanaExitosa: <VentanaExitosa evento={evento} onCerrar={onCerrar} />,
-    };
+    const [vistaAnterior, setVistaAnterior] = useState("detalle");
 
     const cambiarVista = (nuevaVista) => {
+        setVistaAnterior(vistaActual);
         setVistaActual(nuevaVista);
     };
 
-    return (
-    <>
-       {vistaActual === "detalle" && vistas.detalle}
-       {vistaActual === "expertos" && vistas.expertos}
-       {/* {vistaActual === "ventanaExitosa" && vistas.ventanaExitosa} */}
-    </>
-    );
+    const manejarRegreso = () => {
+        // Siempre volvemos al detalle por ahora, pero se puede hacer más flexible
+        setVistaActual(vistaAnterior);
+    };
+
+    const vistas = {
+        detalle: (
+            <DetalleEvento
+                evento={evento}
+                onCerrar={onCerrar}
+                onEscalarRevision={() => cambiarVista("expertos")}
+            />
+        ),
+        expertos: (
+            <ExpertosListado
+                evento={evento}
+                onCerrar={onCerrar}
+                onSolicitar={(experto) =>
+                    console.log("Se ha relevado la revisión al experto/a: " + experto.nombre)
+                }
+                onVolver={manejarRegreso}
+            />
+        ),
+        // ventanaExitosa: ...
+    };
+
+    return <>{vistas[vistaActual]}</>;
 };
-        
+
 export default ProcesoRevision;

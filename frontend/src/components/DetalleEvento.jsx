@@ -3,7 +3,7 @@ import { motion} from 'framer-motion';
 import mapImage from '../assets/map.png';
 
 
-  const DetalleEvento = ({ evento, onCerrar }) => {
+  const DetalleEvento = ({ evento, onCerrar, onEscalarRevision }) => {
     if (!evento) return null;
 
     const [showMap, setShowMap] = useState(true);
@@ -94,7 +94,7 @@ import mapImage from '../assets/map.png';
   Aceptar y notificar
 </button>
 
-<button className="bg-[#cfe0e0] text-black py-2 px-4 rounded-full font-medium transition-all duration-200 hover:bg-[#bad4d4] active:scale-95 shadow">
+<button className="bg-[#cfe0e0] text-black py-2 px-4 rounded-full font-medium transition-all duration-200 hover:bg-[#bad4d4] active:scale-95 shadow" onClick={onEscalarRevision}>
   Solicitar revisión a experto
 </button>
 

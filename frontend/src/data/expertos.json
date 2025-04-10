@@ -1,0 +1,24 @@
+
+[
+    {
+      "id": 1,
+      "nombre": "Judith Meles",
+      "avatar": "/expertos/JM.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Germán Vélez",
+      "avatar": "/expertos/ger.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Sol Vega",
+      "avatar": "/expertos/SV.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Georgina González",
+      "avatar": "/expertos/Fotos Georgi.jpeg"
+    }
+  ]
+  

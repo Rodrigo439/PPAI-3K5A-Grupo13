@@ -1,0 +1,79 @@
+[
+    {
+      "id": 1,
+      "inicio": "2025-02-21 19:05:41",
+      "frecuenciaMuestreo": 50,
+      "alerta": false,
+      "muestras": [
+        {
+          "fecha": "2025-02-21 19:05:41",
+          "velocidad": "7 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.7 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        },
+        {
+          "fecha": "2025-02-21 19:10:41",
+          "velocidad": "7.02 Km/seg",
+          "frecuencia": "10 Hz",
+          "longitud": "0.69 km/ciclo"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "inicio": "2025-02-22 08:20:00",
+      "frecuenciaMuestreo": 60,
+      "alerta": true,
+      "muestras": [
+        {
+          "fecha": "2025-02-22 08:20:00",
+          "velocidad": "6.5 Km/seg",
+          "frecuencia": "12 Hz",
+          "longitud": "0.75 km/ciclo"
+        }
+      ]
+    }
+  ]
+  
